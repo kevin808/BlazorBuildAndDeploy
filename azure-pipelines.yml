@@ -16,7 +16,7 @@ steps:
 - task: DotNetCoreInstaller@0
   displayName: 'Installing .NET Core SDK...'
   inputs:
-    version: 3.0.100-preview-010184
+    version: 3.0.100
 
 - script: dotnet build --configuration $(buildConfiguration) BuildAndDeploy/BuildAndDeploy.csproj
   displayName: 'Building $(buildConfiguration)...'
